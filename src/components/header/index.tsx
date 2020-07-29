@@ -1,23 +1,16 @@
 import { FunctionalComponent, h } from "preact";
-import { Link } from "preact-router/match";
-import * as style from "./style.css";
+import { Flex, Text } from "rebass";
 
 const Header: FunctionalComponent = () => {
     return (
-        <header class={style.header}>
-            <h1>Preact App</h1>
-            <nav>
-                <Link activeClassName={style.active} href="/">
-                    Home
-                </Link>
-                <Link activeClassName={style.active} href="/profile">
-                    Me
-                </Link>
-                <Link activeClassName={style.active} href="/profile/john">
-                    John
-                </Link>
-            </nav>
-        </header>
+        <Flex px={2} color="white" bg="black" alignItems="center">
+            <Text p={2} fontWeight="bold">
+                Ikitai
+            </Text>
+            <Text p={2} fontWeight="bold">
+                Find your next destination
+            </Text>
+        </Flex>
     );
 };
 
