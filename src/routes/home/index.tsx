@@ -1,12 +1,36 @@
 import { FunctionalComponent, h } from "preact";
-import * as style from "./style.css";
+import { Button, Box, Flex, Text } from "rebass";
 
 const Home: FunctionalComponent = () => {
     return (
-        <div class={style.home}>
-            <h1>Home</h1>
-            <p>This is the Home component.</p>
-        </div>
+        <Flex flexWrap="wrap" height="100%">
+            <Flex
+                justifyContent="center"
+                alignItems="center"
+                px={2}
+                py={2}
+                width={1 / 2}
+                height="100%"
+                bg="blue"
+            >
+                <Button variant="primary" mr={2}>
+                    I like it cold
+                </Button>
+            </Flex>
+            <Flex
+                justifyContent="center"
+                alignItems="center"
+                px={2}
+                py={2}
+                width={1 / 2}
+                height="100%"
+                bg="red"
+            >
+                <Button variant="secondary" mr={2}>
+                    Give me sun
+                </Button>
+            </Flex>
+        </Flex>
     );
 };
 
