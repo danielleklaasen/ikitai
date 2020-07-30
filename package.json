@@ -25,6 +25,7 @@
     "build/*"
   ],
   "dependencies": {
+    "@rebass/forms": "^4.0.6",
     "emotion-theming": "^10.0.27",
     "preact": "^10.3.1",
     "preact-jsx-chai": "^3.0.0",

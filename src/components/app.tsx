@@ -3,7 +3,8 @@ import { Route, Router, RouterOnChangeArgs } from "preact-router";
 
 import Home from "../routes/home";
 import Profile from "../routes/profile";
-import NotFoundPage from "../routes/notfound";
+import Flights from "../routes/flights";
+import Result from "../routes/result";
 import Header from "./header";
 
 import { ThemeProvider } from "emotion-theming";
@@ -28,7 +29,9 @@ const App: FunctionalComponent = () => {
                 <Route path="/" component={Home} />
                 <Route path="/profile/" component={Profile} user="me" />
                 <Route path="/profile/:user" component={Profile} />
-                <NotFoundPage default />
+                <Route path="/flights" component={Flights} />
+                <Route path="/result" component={Result} />
+                <Home default />
             </Router>
         </ThemeProvider>
     );

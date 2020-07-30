@@ -1,27 +1,41 @@
 import { FunctionalComponent, h } from "preact";
-import { Flex, Text } from "rebass";
+import { Flex, Image, Link, Text } from "rebass";
 
 const Header: FunctionalComponent = () => {
     return (
         <Flex
             py={3}
-            color="white"
-            bg="black"
+            color="black"
+            bg="lightgray"
             alignItems="center"
-            style={{ position: "fixed", width: "100%" }}
+            sx={{
+                position: "fixed",
+                width: "100%"
+            }}
         >
-            <Text
-                px={4}
-                py={1}
+            <Link
+                pl={4}
+                pr={3}
                 fontWeight="bold"
-                style={{
+                variant="secondary"
+                color="black"
+                fontFamily="heading"
+                fontSize={3}
+                sx={{
                     textTransform: "uppercase",
-                    borderRight: "1px solid white"
+                    borderRight: "1px solid black",
+                    textDecoration: "none"
                 }}
+                href="/"
             >
+                <Image
+                    src="/assets/icons/globe.svg"
+                    mr={2}
+                    sx={{ height: "16px" }}
+                />
                 Ikitai
-            </Text>
-            <Text py={1} px={4}>
+            </Link>
+            <Text pl={3} pr={4} fontSize={3} fontFamily="heading">
                 Find your next destination
             </Text>
         </Flex>
