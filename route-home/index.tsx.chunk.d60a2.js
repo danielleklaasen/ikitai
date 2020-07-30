@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[2],{FA6U:function(e){e.exports={home:"home__MseGd"}},FDtd:function(e,o,n){"use strict";n.r(o);var t=n("hosL"),s=n("FA6U");o.default=function(){return Object(t.h)("div",{class:s.home},Object(t.h)("h1",null,"Home"),Object(t.h)("p",null,"This is the Home component."))}}}]);
-//# sourceMappingURL=index.tsx.chunk.d60a2.js.map
