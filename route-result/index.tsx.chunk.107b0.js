@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{AgIf:function(t,e,n){"use strict";n.r(e);var s=n("hosL"),c=n("St9t");e.default=function(){return Object(s.h)(c.d,{height:"100%",alignItems:"center",justifyContent:"center",bg:"primary"},Object(s.h)(c.d,{bg:"white",p:2,sx:{borderRadius:4,boxShadow:"small"}},Object(s.h)(c.c,{width:[256,320],mx:"auto"},Object(s.h)(c.e,{src:"https://source.unsplash.com/random/512x384?space"}),Object(s.h)(c.g,{fontFamily:"heading"},"Amsterdam"))))}}}]);
-//# sourceMappingURL=index.tsx.chunk.107b0.js.map
