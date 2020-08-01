@@ -1,4 +1,5 @@
 import { resolve } from "path";
+import envVars from "preact-cli-plugin-env-vars";
 
 export default {
     /**
@@ -11,6 +12,8 @@ export default {
      * @param {object} options - this is mainly relevant for plugins (will always be empty in the config), default to an empty object
      **/
     webpack(config, env, helpers, options) {
+        envVars(config, env, helpers);
+
         config.module.rules[4].use.splice(1, 0, {
             loader: "@teamsupercell/typings-for-css-modules-loader",
             options: {

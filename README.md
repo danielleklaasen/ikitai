@@ -32,8 +32,6 @@ npm run dev
     [`enzyme-adapter-preact-pure`](https://github.com/preactjs/enzyme-adapter-preact-pure) for
     your tests
 
--   `npm run deploy`: Builds the app and deploy using [GitHub Pages](https://pages.github.com/)
-
 For detailed explanation on other Preact CLI commands, checkout the [CLI Readme](https://github.com/developit/preact-cli/blob/master/README.md).
 
 ## This project is build with:
