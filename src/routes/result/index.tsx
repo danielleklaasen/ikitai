@@ -59,7 +59,7 @@ const Result: FunctionalComponent = () => {
 
     const fetchAndSetLocationData = async (): Promise<void[]> => {
         const API_URL =
-            "http://dataservice.accuweather.com/currentconditions/v1/";
+            "https://dataservice.accuweather.com/currentconditions/v1/";
         const API_KEY = getApiKey();
 
         return await Promise.all(

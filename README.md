@@ -43,6 +43,22 @@ For detailed explanation on other Preact CLI commands, checkout the [CLI Readme]
 -   ### [Rebass](https://rebassjs.org/)
     A lightweight UI toolkit, in combination with [emotion-theming](https://emotion.sh/docs/theming). It enables for great performance since it generates css classes for you. Just pass in your styles throught the `sx` prop and you're ready to go.
 
+## Highlights
+
+### Scalable design system
+
+Ready for a scalable design system due to the implementation of [emotion-theming](https://emotion.sh/docs/theming). See the `src/style/theme.tsx` file for an example.
+
+### Modularity
+
+To support reusability and ease of implementing unit tests.
+
+![DX example](readme/modularity.png)
+
+### DX
+
+![DX example](readme/dx.png)
+
 ## Missing elements
 
 There are some missing elements, like:

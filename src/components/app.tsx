@@ -2,7 +2,6 @@ import { FunctionalComponent, h } from "preact";
 import { Route, Router, RouterOnChangeArgs } from "preact-router";
 
 import Home from "../routes/home";
-import Profile from "../routes/profile";
 import Flights from "../routes/flights";
 import Result from "../routes/result";
 import Header from "./header";
