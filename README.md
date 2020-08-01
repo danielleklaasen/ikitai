@@ -43,11 +43,15 @@ For detailed explanation on other Preact CLI commands, checkout the [CLI Readme]
 -   ### [Rebass](https://rebassjs.org/)
     A lightweight UI toolkit, in combination with [emotion-theming](https://emotion.sh/docs/theming). It enables for great performance since it generates css classes for you. Just pass in your styles throught the `sx` prop and you're ready to go.
 
+## Missing elements
+
+There are some missing elements, like:
+
+-   **Big missing part is that sorting the results ascending or descending on temperature is not dynamic**. But the app is completely ready for it. Passing on the props through routing isn't a very neat solution, so adding some state management would be benefical in order to pass on the choice in the first screen.
+
+-   Ticket prices are hard coded and there is done nothing with them yet. With a small adjustment the sorting mechanism that is in place can be reused.
+
 ## Future improvements
-
-**Big missing part is that sorting the results is not dynamic.**
-
-Passing on the props through routing isn't a very neat solution, so adding some state management would be benefical.
 
 Next steps would be the following:
 
