@@ -2,7 +2,7 @@
 
 Ikitai (いきたい) is Japanese for expressing **the desire of going somewhere**. Don't know where you wanna go? Use this decision making tool and you'll be traveling soon ✈️
 
-Check out the live project at [https://danielleklaasen.github.io/ikitai/](https://danielleklaasen.github.io/ikitai/)
+Check out the live project at [https://ikitai.netlify.app/](https://ikitai.netlify.app/)
 
 ## Getting started
 
@@ -41,4 +41,17 @@ For detailed explanation on other Preact CLI commands, checkout the [CLI Readme]
     Less is more. Or actually not really, in this case _less_ is only 3kB.
 
 -   ### [Rebass](https://rebassjs.org/)
-    A lightweight UI toolkit, in combination with [emotion-theming](https://emotion.sh/docs/theming). It enables for great performance since it generates css classes on the fly. Just pass in your styles throught the `sx` prop and you're ready to go.
+    A lightweight UI toolkit, in combination with [emotion-theming](https://emotion.sh/docs/theming). It enables for great performance since it generates css classes for you. Just pass in your styles throught the `sx` prop and you're ready to go.
+
+## Future improvements
+
+**Big missing part is that sorting the results is not dynamic.**
+
+Passing on the props through routing isn't a very neat solution, so adding some state management would be benefical.
+
+Next steps would be the following:
+
+-   Implement something like [Axios](https://github.com/axios/axios) to fetch data properly. Also use services for making API connections.
+-   Implement layer around Rebass UI kit. To avoid applying styling tweaks to Rebass components on multiple places.
+-   Make the decision making tool a little smarter with more data :)
+-   Play around with an AI solution and human feedback to see if users liked the location that was recommended to them (making the AI system smarter).
