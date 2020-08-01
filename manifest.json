@@ -1,7 +1,7 @@
 {
   "name": "ikitai",
   "short_name": "ikitai",
-  "start_url": "/",
+  "start_url": "/ikitai",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#fff",
