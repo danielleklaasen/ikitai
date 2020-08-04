@@ -1,18 +1,15 @@
-/* eslint-disable @typescript-eslint/explicit-function-return-type */
-/* eslint-disable @typescript-eslint/ban-ts-ignore */
 import { FunctionalComponent, h } from "preact";
 import { Button, Box, Flex, Text, Image } from "rebass";
 import { route } from "preact-router";
 import { useState } from "preact/hooks";
 
-// @ts-ignore
 import { Label, Slider } from "@rebass/forms";
 
 const Flights: FunctionalComponent = () => {
     const [amount, setAmount] = useState<number>(200);
 
-    const onSliderChange = (e: any) => {
-        setAmount(e.target.value);
+    const onSliderChange = ({ target }: { target: HTMLInputElement }): void => {
+        setAmount(target.valueAsNumber);
     };
 
     return (
@@ -60,7 +57,7 @@ const Flights: FunctionalComponent = () => {
             </Box>
             <Button
                 variant="primary"
-                onClick={() => route("/result")}
+                onClick={(): boolean => route("/result")}
                 sx={{
                     cursor: "pointer",
                     display: "flex",

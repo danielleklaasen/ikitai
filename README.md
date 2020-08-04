@@ -53,17 +53,15 @@ Ready for a scalable design system due to the implementation of [emotion-theming
 
 To support reusability and ease of implementing unit tests.
 
-![DX example](readme/modularity.png)
+![DX example](docs/modularity.png)
 
 ### DX
 
-![DX example](readme/dx.png)
+![DX example](docs/dx.png)
 
 ## Missing elements
 
 There are some missing elements, like:
-
--   **Big missing part is that sorting the results ascending or descending on temperature is not dynamic**. But the app is completely ready for it. Passing on the props through routing isn't a very neat solution, so adding some state management would be benefical in order to pass on the choice in the first screen.
 
 -   Ticket prices are hard coded and there is done nothing with them yet. With a small adjustment the sorting mechanism that is in place can be reused.
 
@@ -74,4 +72,3 @@ Next steps would be the following:
 -   Implement something like [Axios](https://github.com/axios/axios) to fetch data properly. Also use services for making API connections.
 -   Implement layer around Rebass UI kit. To avoid applying styling tweaks to Rebass components on multiple places.
 -   Make the decision making tool a little smarter with more data :)
--   Play around with an AI solution and human feedback to see if users liked the location that was recommended to them (making the AI system smarter).

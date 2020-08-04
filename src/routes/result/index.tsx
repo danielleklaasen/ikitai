@@ -3,8 +3,8 @@ import { Flex, Text } from "rebass";
 import { useEffect, useState } from "preact/hooks";
 import { getApiKey } from "../../helpers/get-api-key";
 import { sortCitiesOnTemperature } from "../../helpers/sort-cities-on-temperature";
-import { Sort } from "../../helpers/sort-cities-on-temperature";
 import { CityCard } from "../../components/card";
+import { useSortTemperature } from "../../helpers/hooks";
 
 const MEASUREMENT_SYSTEM = "Metric";
 const TEMPERATURE_UNIT = MEASUREMENT_SYSTEM === "Metric" ? "C" : "F";
@@ -56,6 +56,7 @@ const cities: Array<City> = [
 const Result: FunctionalComponent = () => {
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [sortedCities, setSortedCities] = useState<Array<City>>([]);
+    const [sortTemperature, setSortTemperature] = useSortTemperature();
 
     const fetchAndSetLocationData = async (): Promise<void[]> => {
         const API_URL =
@@ -80,7 +81,10 @@ const Result: FunctionalComponent = () => {
     useEffect(() => {
         setIsLoading(true);
         fetchAndSetLocationData().then(() => {
-            const sortedResult = sortCitiesOnTemperature(cities, Sort.DESC);
+            const sortedResult = sortCitiesOnTemperature(
+                cities,
+                sortTemperature
+            );
             setSortedCities(sortedResult);
             setIsLoading(false);
         });

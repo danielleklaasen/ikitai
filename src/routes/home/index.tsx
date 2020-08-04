@@ -1,8 +1,12 @@
 import { FunctionalComponent, h } from "preact";
 import { Button, Flex, Image } from "rebass";
 import { route } from "preact-router";
+import { Sort } from "../../helpers/sort-cities-on-temperature";
+import { useSortTemperature } from "../../helpers/hooks";
 
 const Home: FunctionalComponent = () => {
+    const [sortTemperature, setSortTemperature] = useSortTemperature();
+
     return (
         <Flex height="100%">
             <Flex
@@ -18,7 +22,10 @@ const Home: FunctionalComponent = () => {
                 <Image src="/assets/icons/cloud-snow.svg" mb={4} />
                 <Button
                     variant="outline"
-                    onClick={() => route("/flights")}
+                    onClick={(): void => {
+                        setSortTemperature(Sort.ASC);
+                        route("/flights");
+                    }}
                     sx={{
                         cursor: "pointer"
                     }}
@@ -41,7 +48,10 @@ const Home: FunctionalComponent = () => {
                 <Image src="/assets/icons/sun.svg" mb={4} />
                 <Button
                     variant="outline"
-                    onClick={() => route("/flights")}
+                    onClick={(): void => {
+                        setSortTemperature(Sort.DESC);
+                        route("/flights");
+                    }}
                     sx={{
                         cursor: "pointer"
                     }}
